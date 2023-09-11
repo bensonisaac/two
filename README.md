@@ -3,6 +3,12 @@
 
 REST API capable of CRUD operations
 
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+Python 3.x installed
+PostgreSQL database (you can use a local instance or a cloud-hosted database) - not important
+
 
 ## Installation
 Run the app locally
@@ -13,7 +19,7 @@ git clone https://github.com/bensonisaac/two.git
 ```
 Create a virtual environment 
 ```
-python -m venv .venv && .venv/Scripts/activate
+python -m venv .venv && source .venv/Scripts/activate # on Mac use source venv/bin/activate
 ```
 Cd into the project folder
 ```
@@ -42,9 +48,20 @@ python manage.py runserver
 
 [Documentation](https://github.com/bensonisaac/two/blob/main/DOCUMENTATION.md)
 
+## UML
+----------------------
+|      Person        |
+----------------------
+| - name: String     |
+| - email: Sting     |
+| - username: String |
+----------------------
+
+
 
 ## Tech Stack
 
 **Server:** Python/Django, djangorestframework
+
 **Database:** PostgreSQL 
 

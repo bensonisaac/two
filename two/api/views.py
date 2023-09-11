@@ -1,3 +1,4 @@
+from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -23,16 +24,10 @@ def persons(request):
 
 @api_view(["GET", "PUT", "PATCH", "DELETE"])
 def person_detail(request, param):
-    try:
-        if param.isnumeric():
-            person = Person.objects.get(id=param)
-        else:
-            person = Person.objects.get(name__iexact=param)
-    except Person.DoesNotExist:
-        return Response(
-            {"message": f"Person is not found"},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+    if param.isdigit():
+        person = get_object_or_404(Person, id=param)
+    else:
+        person = get_object_or_404(Person, name__iexact=param)
 
     if request.method == "GET":
         serializer = PersonSerializer(person)
@@ -47,4 +42,6 @@ def person_detail(request, param):
 
     elif request.method == "DELETE":
         person.delete()
-        return Response({"message": f"Person deleted"},status=status.HTTP_204_NO_CONTENT)
+        return Response(
+            {"message": f"Person deleted"}, status=status.HTTP_204_NO_CONTENT
+        )

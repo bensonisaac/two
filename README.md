@@ -48,16 +48,6 @@ python manage.py runserver
 
 [Documentation](https://github.com/bensonisaac/two/blob/main/DOCUMENTATION.md)
 
-## UML
-----------------------
-|      Person        |
-----------------------
-| - name: String     |
-| - email: Sting     |
-| - username: String |
-----------------------
-
-
 
 ## Tech Stack
 

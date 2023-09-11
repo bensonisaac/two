@@ -1,7 +1,7 @@
 # API Documentation
 
-Welcome to the documentation for the **Django REST API**. This API provides basic CRUD operations for managing persons.
-
+Welcome to the documentation for the **HNGx Person API**. This API provides basic CRUD operations for managing persons.
+hosted url - [Person API](https://person-y064.onrender.com)
 ## Table of Contents
 
 - [API Endpoints](#api-endpoints)
@@ -10,6 +10,7 @@ Welcome to the documentation for the **Django REST API**. This API provides basi
   - [Update Details of a Person](#update-details-of-a-person)
   - [Remove a Person](#remove-a-person)
 - [Request and Response Formats](#request-and-response-formats)
+- [How to install](#how-to-install)
 
 ## API Endpoints
 
@@ -124,4 +125,4 @@ All API endpoints accept and return data in JSON format.
 Ensure that the request and response data adhere to the specified formats mentioned above.
 
 ## How to install
-Consult the README
+Consult the [README](https://github.com/bensonisaac/two/blob/main/README.md)

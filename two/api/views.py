@@ -47,4 +47,4 @@ def person_detail(request, param):
 
     elif request.method == "DELETE":
         person.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response({"message": f"Person deleted"},status=status.HTTP_204_NO_CONTENT)

@@ -10,6 +10,7 @@ hosted url - [Person API](https://person-y064.onrender.com)
   - [Update Details of a Person](#update-details-of-a-person)
   - [Remove a Person](#remove-a-person)
 - [Request and Response Formats](#request-and-response-formats)
+- [Known Limitations](#known-limitations)
 - [How to install](#how-to-install)
 
 ## API Endpoints
@@ -123,6 +124,14 @@ No response body.
 ## Request and Response Formats
 All API endpoints accept and return data in JSON format.
 Ensure that the request and response data adhere to the specified formats mentioned above.
+
+## Known Limitations
+
+- The API does not support pagination.
+- The API does not support filtering.
+- The API does not support sorting.
+- This documentation assumes a local development setup.
+- Authentication and authorization mechanisms are not implemented
 
 ## How to install
 Consult the [README](https://github.com/bensonisaac/two/blob/main/README.md)

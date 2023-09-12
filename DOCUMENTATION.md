@@ -10,6 +10,7 @@ hosted url - [Person API](https://person-y064.onrender.com)
   - [Update Details of a Person](#update-details-of-a-person)
   - [Remove a Person](#remove-a-person)
 - [Request and Response Formats](#request-and-response-formats)
+- [UML Diagram](#uml-diagram)
 - [Known Limitations](#known-limitations)
 - [How to install](#how-to-install)
 
@@ -132,6 +133,11 @@ Ensure that the request and response data adhere to the specified formats mentio
 - The API does not support sorting.
 - This documentation assumes a local development setup.
 - Authentication and authorization mechanisms are not implemented
+
+## UML Diagram
+Link to [UML](https://lucid.app/documents/embedded/28de1370-635c-4271-9cdd-e4855cf5fba4?invitationId=inv_c740a44f-25e0-4bea-94f3-79d9330d6d8e#)
+
+
 
 ## How to install
 Consult the [README](https://github.com/bensonisaac/two/blob/main/README.md)
